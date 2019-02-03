@@ -14,13 +14,13 @@ public class Price {
     public void printPriceRange(){
 
         for (int number = this.firstPrice; number <= this.secondPrice ; number++) {
-            System.out.println("The number: "+ number );
+            System.out.println("The price is "+ number+ "." );
         }
     }
     public List<Integer> listPriceRange(){
         List<Integer> list = new ArrayList<Integer>();
         for (int number = this.firstPrice; number <= this.secondPrice ; number++) {
-            System.out.println("The number: "+ number );
+            System.out.println(" The price is " +number+" in the list of price.");
         }
         return list;
     }

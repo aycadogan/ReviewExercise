@@ -4,5 +4,7 @@ public class Main {
 
         Price printPrices = new Price(10, 20);
         printPrices.printPriceRange();
+        printPrices.listPriceRange();
+
     }
 }
