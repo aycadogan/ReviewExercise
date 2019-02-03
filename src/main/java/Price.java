@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Price {
 
     private int firstPrice;
@@ -14,7 +17,13 @@ public class Price {
             System.out.println("The number: "+ number );
         }
     }
-
+    public List<Integer> listPriceRange(){
+        List<Integer> list = new ArrayList<Integer>();
+        for (int number = this.firstPrice; number <= this.secondPrice ; number++) {
+            System.out.println("The number: "+ number );
+        }
+        return list;
+    }
     public int getFirstPrice() {
         return firstPrice;
     }
