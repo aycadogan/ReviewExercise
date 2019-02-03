@@ -1,11 +1,18 @@
 public class Price {
 
-    int firstPrice;
-    int secondPrice;
+    private int firstPrice;
+    private int secondPrice;
 
     public Price(int firstPrice, int secondPrice) {
         this.firstPrice = firstPrice;
         this.secondPrice = secondPrice;
+    }
+
+    public void printPriceRange(){
+
+        for (int number = this.firstPrice; number <= this.secondPrice ; number++) {
+            System.out.println("The number: "+ number );
+        }
     }
 
     public int getFirstPrice() {
